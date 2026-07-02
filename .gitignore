@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+
+# Original source uploads (already compressed/copied into /assets for the site)
+Modern Professional CV Resume - 5.png
+Resume.pdf

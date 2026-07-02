@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BE185D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="dots6" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#FFFFFF" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#101014"/>
+  <rect width="800" height="600" fill="url(#pg6)" opacity="0.9"/>
+  <rect width="800" height="600" fill="url(#dots6)"/>
+  <circle cx="700" cy="60" r="220" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="60" cy="560" r="180" fill="#000000" opacity="0.12"/>
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="46" fill="#FFFFFF">Pulse Music Fest</text>
+  <rect x="24" y="536" width="230" height="30" rx="15" fill="#000000" opacity="0.28"/>
+  <text x="38" y="556" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.85">PLACEHOLDER — swap image</text>
+</svg>

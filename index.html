@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT HERE: page title + description shown in browser tab & search results -->
+  <title>Maryam Rafique — Graphic Designer</title>
+  <meta name="description" content="Maryam Rafique is a graphic designer & social media specialist crafting brand identities and visuals that make brands unforgettable.">
+
+  <!-- EDIT HERE: Open Graph tags control the preview shown when this link is shared on social media / iMessage / Slack -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maryam Rafique — Graphic Designer">
+  <meta property="og:description" content="Graphic designer & social media specialist helping brands stand out with striking, results-driven design.">
+  <meta property="og:image" content="assets/og-image.svg">
+  <meta property="og:url" content="https://example.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- EDIT HERE: swap favicon.svg in /assets to change the browser tab icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <!-- EDIT HERE: your name / logo text -->
+      <a href="#top" class="navbar__logo">Maryam Rafique</a>
+
+      <nav class="navbar__nav" aria-label="Primary">
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#about" data-nav-link>About</a></li>
+          <li><a href="#work" data-nav-link>Work</a></li>
+          <li><a href="#experience" data-nav-link>Experience</a></li>
+          <li><a href="#faq" data-nav-link>FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- EDIT HERE: booking link -->
+      <a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary btn--sm navbar__cta" target="_blank" rel="noopener">Book a Consultation</a>
+
+      <button class="navbar__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary" target="_blank" rel="noopener">Book a Consultation</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <!-- EDIT HERE: eyebrow label -->
+          <p class="eyebrow">Graphic Designer &amp; Social Media Specialist</p>
+
+          <!-- EDIT HERE: headline -->
+          <h1 class="hero__headline">I craft brand identities and visuals that make brands <span class="text-accent">unforgettable</span>.</h1>
+
+          <!-- EDIT HERE: subheadline -->
+          <p class="hero__sub">Graphic designer &amp; social media specialist helping brands stand out with striking, results-driven design.</p>
+
+          <div class="hero__actions">
+            <!-- EDIT HERE: booking link -->
+            <a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary" target="_blank" rel="noopener">Book a Consultation</a>
+            <!-- EDIT HERE: CV download link -->
+            <a href="assets/CV.pdf" class="btn btn--secondary" target="_blank" rel="noopener">Download CV</a>
+          </div>
+
+          <!-- EDIT HERE: "worked with" chips — swap for real client/brand names -->
+          <div class="hero__trusted">
+            <span class="hero__trusted-label">Worked with</span>
+            <ul class="hero__trusted-chips">
+              <li>Lumen Cosmetics</li>
+              <li>Nova Cafe</li>
+              <li>Orbit Fitness</li>
+              <li>Verve Magazine</li>
+              <li>Solstice</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__avatar-frame">
+            <!-- EDIT HERE: avatar image -->
+            <img src="assets/maryam.jpg" alt="Portrait of Maryam Rafique" class="hero__avatar" width="509" height="720">
+          </div>
+          <p class="hero__visual-name">Maryam Rafique</p>
+          <p class="hero__visual-role">Graphic Designer</p>
+        </div>
+      </div>
+
+      <!-- EDIT HERE: credibility stats — numbers count up on scroll -->
+      <div class="stat-strip reveal">
+        <div class="container stat-strip__inner">
+          <div class="stat">
+            <span class="stat__value"><span class="js-count" data-count-to="4" data-suffix="+">0</span></span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span class="js-count" data-count-to="50" data-suffix="+">0</span></span>
+            <span class="stat__label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span class="js-count" data-count-to="5" data-decimals="1">0</span></span>
+            <span class="stat__label">Client Rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WORK / CASE STUDIES ============================= -->
+    <section class="work" id="work">
+      <div class="container">
+        <p class="eyebrow reveal">Selected Work</p>
+        <h2 class="section-title reveal">Case studies that moved the needle</h2>
+        <p class="section-sub reveal">A few projects I'm proud of — click any card for the full case study.</p>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+
+        <!-- EDIT HERE: project grid — each .project-card is one project. Duplicate a card to add more.
+             Add "project-card--featured" to exactly one card to make it span two columns. -->
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card project-card--featured reveal" data-category="branding"
+            data-title="Lumen Cosmetics"
+            data-tag="Brand Identity"
+            data-metric="+30% brand recognition"
+            data-problem="Lumen needed a cohesive identity to stand out in a crowded beauty market."
+            data-approach="Developed a minimal logo system, warm color palette, and packaging guidelines rooted in the brand's premium positioning."
+            data-result="Consistent visual identity across every touchpoint, driving a 30% lift in unaided brand recognition within 6 months.">
+            <div class="project-card__media">
+              <img src="assets/project-1.svg" alt="Lumen Cosmetics brand identity mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Brand Identity</span>
+              <h3>Lumen Cosmetics</h3>
+              <p>A full identity system for a premium skincare label.</p>
+              <p class="project-card__metric">+30% brand recognition</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="social"
+            data-title="Nova Cafe"
+            data-tag="Social Media"
+            data-metric="+45% engagement rate"
+            data-problem="Nova Cafe's social presence felt inconsistent and failed to convert followers into customers."
+            data-approach="Built a modular content system with templated Reels covers, story highlights, and a consistent color language."
+            data-result="Engagement rate rose 45% quarter over quarter with a noticeably more cohesive feed.">
+            <div class="project-card__media">
+              <img src="assets/project-2.svg" alt="Nova Cafe social media content mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Social Media</span>
+              <h3>Nova Cafe</h3>
+              <p>A content system built for consistent daily posting.</p>
+              <p class="project-card__metric">+45% engagement rate</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="branding"
+            data-title="Orbit Fitness App"
+            data-tag="Brand Identity"
+            data-problem="Orbit needed an energetic, modern identity to launch its fitness app in a saturated market."
+            data-approach="Designed a bold wordmark, icon system, and app store assets that felt fast and motivating."
+            data-result="Cohesive brand system used at launch across app store, website, and paid social creative.">
+            <div class="project-card__media">
+              <img src="assets/project-3.svg" alt="Orbit Fitness App brand mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Brand Identity</span>
+              <h3>Orbit Fitness App</h3>
+              <p>Energetic identity and launch assets for a fitness app.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="print"
+            data-title="Verve Magazine"
+            data-tag="Print Design"
+            data-metric="Sold out first print run"
+            data-problem="Verve wanted an editorial layout that felt premium on newsstands and on a shoestring budget."
+            data-approach="Crafted a grid-based layout system, custom pull-quote treatments, and a striking cover series."
+            data-result="First print run sold out; the layout system is still used two years later.">
+            <div class="project-card__media">
+              <img src="assets/project-4.svg" alt="Verve Magazine editorial layout mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Print Design</span>
+              <h3>Verve Magazine</h3>
+              <p>Editorial layout system for a quarterly print magazine.</p>
+              <p class="project-card__metric">Sold out first print run</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="branding"
+            data-title="Solstice Packaging"
+            data-tag="Packaging"
+            data-problem="Solstice's packaging didn't reflect the sustainable, premium nature of the product inside."
+            data-approach="Designed recyclable packaging with a tactile finish, botanical motifs, and clear shelf hierarchy."
+            data-result="Packaging redesign became a key differentiator cited in retailer buy-in meetings.">
+            <div class="project-card__media">
+              <img src="assets/project-5.svg" alt="Solstice packaging design mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Packaging</span>
+              <h3>Solstice Packaging</h3>
+              <p>Sustainable packaging system with shelf standout.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="social"
+            data-title="Pulse Music Fest"
+            data-tag="Poster Design"
+            data-metric="2M+ social impressions"
+            data-problem="Pulse needed poster and social creative that captured festival energy across every platform."
+            data-approach="Created a bold type-driven poster series and a matching set of animated social templates."
+            data-result="Campaign generated over 2M social impressions ahead of the festival's opening weekend.">
+            <div class="project-card__media">
+              <img src="assets/project-6.svg" alt="Pulse Music Fest poster design mockup" loading="lazy" width="800" height="600">
+              <div class="project-card__overlay"><span>View Project</span></div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Poster Design</span>
+              <h3>Pulse Music Fest</h3>
+              <p>Poster series and social campaign for a music festival.</p>
+              <p class="project-card__metric">2M+ social impressions</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= ANIMATED BIO / ABOUT ============================= -->
+    <section class="about" id="about">
+      <div class="container">
+        <p class="eyebrow reveal">About</p>
+        <!-- EDIT HERE: bio copy — [X], [ROLE], [COMPANY] placeholders -->
+        <p class="about__text reveal">
+          Graphic designer and expert in
+          <span class="rotating-word" id="rotatingWord">Brand Identity</span>
+          with <strong>4+</strong> years of experience. Expertise extends to social media management,
+          creating work that's both beautiful and effective. Currently working as
+          <strong>Senior Designer</strong> at <strong>[COMPANY]</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= TESTIMONIALS ============================= -->
+    <section class="testimonials" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <p class="eyebrow reveal">Testimonials</p>
+        <h2 class="section-title reveal">What clients say</h2>
+
+        <!-- EDIT HERE: testimonial quotes -->
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Maryam completely transformed how our brand shows up online. The results spoke for themselves within weeks."</p>
+            <footer><span class="avatar-initials">A.K.</span><div><cite>Ayesha Khan</cite><span class="role">Founder, Lumen Cosmetics</span></div></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Sharp, fast, and genuinely creative. Our social engagement jumped almost immediately after the rebrand."</p>
+            <footer><span class="avatar-initials">R.S.</span><div><cite>Raza Sheikh</cite><span class="role">Marketing Lead, Nova Cafe</span></div></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"One of the best design collaborators I've worked with — thoughtful process, beautiful output, every time."</p>
+            <footer><span class="avatar-initials">T.M.</span><div><cite>Tariq Mir</cite><span class="role">Founder, Orbit Fitness</span></div></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SKILLS ============================= -->
+    <section class="skills" aria-label="Skills">
+      <div class="container">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">Tools of the trade</h2>
+        <!-- EDIT HERE: skill tags -->
+        <ul class="skills__cloud">
+          <li class="reveal">Typography</li>
+          <li class="reveal">Branding &amp; Identity</li>
+          <li class="reveal">Poster Design</li>
+          <li class="reveal">Illustration</li>
+          <li class="reveal">Social Media Management</li>
+          <li class="reveal">Social Media SEO</li>
+          <li class="reveal">Visual Arts</li>
+          <li class="reveal">Adobe Illustrator</li>
+          <li class="reveal">Photoshop</li>
+          <li class="reveal">After Effects</li>
+          <li class="reveal">CapCut</li>
+          <li class="reveal">Business Cards</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= EXPERIENCE TIMELINE ============================= -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <p class="eyebrow reveal">Experience</p>
+        <h2 class="section-title reveal">Where I've grown</h2>
+
+        <!-- EDIT HERE: experience entries. This alternating layout is hardcoded for 3 items —
+             to add a 4th, add a matching nth-child(4) rule in the "EXPERIENCE TIMELINE" block of styles.css. -->
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Senior Graphic Designer</h3>
+              <p class="timeline__meta">[Company] — 2023 – Present</p>
+              <p>Leading brand identity and social media design for a portfolio of consumer clients.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Graphic Designer</h3>
+              <p class="timeline__meta">[Company] — 2021 – 2023</p>
+              <p>Designed brand systems, packaging, and campaign creative for regional brands.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Junior Designer</h3>
+              <p class="timeline__meta">[Company] — 2019 – 2021</p>
+              <p>Supported the creative team on social media content and print collateral.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= FAQ ============================= -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="section-title reveal">Frequently asked questions</h2>
+
+        <!-- EDIT HERE: FAQ questions & answers -->
+        <div class="accordion" id="accordion">
+          <div class="accordion__item reveal">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                What is your design process?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>I start with discovery — understanding your brand, audience, and goals — then move through concept exploration, refinement, and final delivery with clear check-ins at every stage.</p>
+            </div>
+          </div>
+          <div class="accordion__item reveal">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                What tools and software do you use?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Primarily Adobe Photoshop, Illustrator, and After Effects for design and motion, Figma for collaborative work, and Canva/CapCut for fast-turnaround social content.</p>
+            </div>
+          </div>
+          <div class="accordion__item reveal">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                How do you ensure your designs work for my brand?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Every project starts with a deep-dive into your brand positioning and audience so the design choices are grounded in strategy, not just aesthetics.</p>
+            </div>
+          </div>
+          <div class="accordion__item reveal">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                What's your turnaround time?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Most brand identity projects take 2–4 weeks; social media content packages typically turn around within 3–5 business days.</p>
+            </div>
+          </div>
+          <div class="accordion__item reveal">
+            <h3>
+              <button class="accordion__trigger" aria-expanded="false">
+                How do we get started?
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>Book a free consultation using the button above — we'll talk through your goals and I'll follow up with a tailored proposal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= CTA FOOTER ============================= -->
+  <footer class="footer">
+    <div class="footer__glow" aria-hidden="true"></div>
+    <div class="container footer__inner reveal">
+      <p class="eyebrow">Let's talk</p>
+      <h2 class="footer__headline">Let's upgrade your brand's presence.</h2>
+
+      <div class="footer__actions">
+        <!-- EDIT HERE: booking + email -->
+        <a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary" target="_blank" rel="noopener">Book a Consultation</a>
+        <a href="mailto:hello@maryamrafique.com" class="btn btn--secondary">hello@maryamrafique.com</a>
+      </div>
+
+      <!-- EDIT HERE: social links -->
+      <div class="footer__socials">
+        <a href="https://instagram.com/YOUR-HANDLE" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:hello@maryamrafique.com" aria-label="Email">Email</a>
+        <a href="https://behance.net/YOUR-HANDLE" target="_blank" rel="noopener" aria-label="Behance">Behance</a>
+      </div>
+
+      <p class="footer__fine-print">&copy; Maryam Rafique — Portfolio 2026</p>
+    </div>
+  </footer>
+
+  <!-- ============================= PROJECT LIGHTBOX (populated by JS) ============================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__panel">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close case study">&times;</button>
+      <img class="lightbox__image" id="lightboxImage" src="" alt="">
+      <div class="lightbox__content">
+        <span class="lightbox__tag" id="lightboxTag"></span>
+        <h3 id="lightboxTitle"></h3>
+        <div class="lightbox__block"><h4>Problem</h4><p id="lightboxProblem"></p></div>
+        <div class="lightbox__block"><h4>Approach</h4><p id="lightboxApproach"></p></div>
+        <div class="lightbox__block"><h4>Result</h4><p id="lightboxResult"></p></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
