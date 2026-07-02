@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT HERE: page title + description shown in browser tab & search results -->
+  <title>About — Maryam Rafique</title>
+  <meta name="description" content="A little about Maryam Rafique — graphic designer and social media specialist based in Lahore.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Maryam Rafique">
+  <meta property="og:description" content="A little about Maryam Rafique — graphic designer and social media specialist based in Lahore.">
+  <meta property="og:image" content="assets/og-image.svg">
+  <meta property="og:url" content="https://example.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) + Dancing Script (signature, this page only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Maryam Rafique</a>
+
+      <nav class="navbar__nav" aria-label="Primary">
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- EDIT HERE: booking link -->
+      <a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary btn--sm navbar__cta" target="_blank" rel="noopener">Book a Consultation</a>
+
+      <button class="navbar__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <nav aria-label="Mobile Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary" target="_blank" rel="noopener">Book a Consultation</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ============================= ABOUT ME PAGE ============================= -->
+    <section class="about-page">
+      <div class="container about-page__inner">
+
+        <!-- EDIT HERE: name label + heading -->
+        <p class="eyebrow reveal">Maryam Rafique</p>
+        <h1 class="about-page__heading reveal">Graphic Designer</h1>
+
+        <!-- EDIT HERE: age / date of birth — the age value auto-calculates from data-dob via JS,
+             falling back to this static "20" if JS is unavailable. -->
+        <div class="about-page__meta reveal">
+          <div class="about-page__meta-item">
+            <span class="about-page__meta-label">Age</span>
+            <span class="about-page__meta-value" id="ageValue" data-dob="2005-12-28">20</span>
+          </div>
+          <div class="about-page__meta-item">
+            <span class="about-page__meta-label">Date Of Birth</span>
+            <span class="about-page__meta-value">28 December 2005</span>
+          </div>
+        </div>
+
+        <hr class="about-page__divider reveal">
+
+        <!-- EDIT HERE: bio copy — [CITY] already filled in as Lahore -->
+        <div class="about-page__block reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-page__bio">I'm Maryam Rafique, a 20-year-old Graphic Designer based in Lahore, with a passion for creating eye-catching designs that drive brand engagement. I've gained hands-on experience working with brands like Novex Studio, MSN Leathers, and Nation-Wide, where I lead creative projects across digital platforms and collaborate with teams to deliver impactful visual content. I specialize in branding, typography, and social media design, always aiming to combine creativity with strategy. Let's work together to bring your brand to life!</p>
+        </div>
+
+        <hr class="about-page__divider reveal">
+
+        <!-- EDIT HERE: closing note + signature -->
+        <div class="about-page__closing reveal">
+          <p>Thank you for visiting my portfolio. If you're interested in collaborating or have any inquiries, feel free to reach out—I'd love to bring your vision to life.</p>
+          <p>Looking forward to working together!</p>
+          <p>Best regards,</p>
+          <p class="about-page__signature">Maryam Rafique</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================= SKILLS ============================= -->
+    <section class="skills" aria-label="Skills">
+      <div class="container">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">Tools of the trade</h2>
+        <!-- EDIT HERE: skill tags -->
+        <ul class="skills__cloud">
+          <li class="reveal">Typography</li>
+          <li class="reveal">Branding &amp; Identity</li>
+          <li class="reveal">Poster Design</li>
+          <li class="reveal">Illustration</li>
+          <li class="reveal">Social Media Management</li>
+          <li class="reveal">Social Media SEO</li>
+          <li class="reveal">Visual Arts</li>
+          <li class="reveal">Adobe Illustrator</li>
+          <li class="reveal">Photoshop</li>
+          <li class="reveal">After Effects</li>
+          <li class="reveal">CapCut</li>
+          <li class="reveal">Business Cards</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= CTA FOOTER ============================= -->
+  <footer class="footer">
+    <div class="footer__glow" aria-hidden="true"></div>
+    <div class="container footer__inner reveal">
+      <p class="eyebrow">Let's talk</p>
+      <h2 class="footer__headline">Let's upgrade your brand's presence.</h2>
+
+      <div class="footer__actions">
+        <!-- EDIT HERE: booking link -->
+        <a href="https://calendar.app.google/FQCtH2QjCRTTmwP78" class="btn btn--primary" target="_blank" rel="noopener">Book a Consultation</a>
+      </div>
+
+      <!-- EDIT HERE: phone + email -->
+      <div class="footer__contact">
+        <a href="tel:+9239997113014"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+92 399 9711 3014</a>
+        <a href="mailto:maryam.designer.07@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>maryam.designer.07@gmail.com</a>
+      </div>
+
+      <p class="footer__fine-print">&copy; Maryam Rafique — Portfolio 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
