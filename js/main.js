@@ -419,24 +419,6 @@
   });
 
   /* ---------------------------------------------------------------------
-     About page: auto-calculate age from data-dob, falling back to the
-     static value already in the markup if anything goes wrong
-     --------------------------------------------------------------------- */
-  var ageEl = document.getElementById("ageValue");
-  if (ageEl && ageEl.dataset.dob) {
-    var dob = new Date(ageEl.dataset.dob);
-    if (!isNaN(dob.getTime())) {
-      var today = new Date();
-      var age = today.getFullYear() - dob.getFullYear();
-      var hasHadBirthdayThisYear =
-        today.getMonth() > dob.getMonth() ||
-        (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
-      if (!hasHadBirthdayThisYear) age--;
-      ageEl.textContent = age;
-    }
-  }
-
-  /* ---------------------------------------------------------------------
      Liquid Glass specular sheen: tracks the cursor over glass cards so the
      highlight moves like light catching curved glass. Desktop-only (touch
      devices have no hovering pointer to track), rAF-throttled so a burst of
